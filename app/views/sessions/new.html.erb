@@ -1,2 +1,11 @@
-<h1>Sessions#new</h1>
-<p>Find me in app/views/sessions/new.html.erb</p>
+<h1>facebook</h1>
+<p>Facebookを使うと、友達や同僚、同級<br>
+生、仲間たちとつながりを深められま<br>
+す。ケータイ、スマートフォンからもア<br>
+クセスできます。
+</p>
+<%= form_with(scope: :session, url: sessions_path, local: true) do |f| %>
+  <p><%= f.email_field :email, placeholder: "メールアドレス"%></p>
+  <p><%= f.password_field :password, placeholder: "パスワード" %></p>
+  <%= f.submit "ログイン" %>
+<% end %>
