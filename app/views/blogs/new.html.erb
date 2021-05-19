@@ -1,6 +1,6 @@
 <%= form_with(model: @blog, local: true) do |form| %>
   <div class="blog_content">
-    <p><%= form.text_area :content, placeholder: "いまなにしてる？", size: "30x10" %></p>
+   <%= form.text_area :content, placeholder: "いまなにしてる？", size: "30x10" %>
   </div>
   <%= form.submit %>
 <% end %>
