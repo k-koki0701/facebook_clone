@@ -1,3 +1,55 @@
-// Place all the styles related to the sessions controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+header {
+  background-color: #1877f2;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+header a {
+  text-decoration: none;
+   color: #fff;
+   margin: 0 10px 20px 0;
+}
+header ul {
+  list-style: none;
+   margin: 0;
+   display: flex;
+}
+header li {
+   margin: 0 0 0 15px;
+   font-size: 14px;
+}
+.fb_logo {
+  color: #1877f2;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 150px ;
+}
+.login_background {
+  background-color: #F8F8FF;
+  padding-top: 50px;
+}
+.introduction_messarge{
+  font-size: 25px;
+  text-align: center;
+}
+form {
+  text-align: center;
+  padding: 70px 0 150px 0;
+}
+footer {
+  width: 100%;
+  background-color:#1877f2;
+  padding: 20px 0 10px 0;
+  color: white;
+  margin: auto;
+  padding-bottom: 10px;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+}
+footer p {
+  text-align: center;
+}

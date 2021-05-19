@@ -1,11 +1,13 @@
-<h1>facebook</h1>
-<p>Facebookを使うと、友達や同僚、同級<br>
-生、仲間たちとつながりを深められま<br>
-す。ケータイ、スマートフォンからもア<br>
-クセスできます。
-</p>
-<%= form_with(scope: :session, url: sessions_path, local: true) do |f| %>
-  <p><%= f.email_field :email, placeholder: "メールアドレス"%></p>
-  <p><%= f.password_field :password, placeholder: "パスワード" %></p>
-  <%= f.submit "ログイン" %>
-<% end %>
+<div class="login_background">
+  <h1 class="fb_logo">facebook</h1>
+  <p class="introduction_messarge">Facebookを使うと、友達や同僚、同級<br>
+  生、仲間たちとつながりを深められま<br>
+  す。ケータイ、スマートフォンからもア<br>
+  クセスできます。
+  </p>
+  <%= form_with(scope: :session, url: sessions_path, local: true) do |f| %>
+    <p><%= f.email_field :email, placeholder: "メールアドレス"%></p>
+    <p><%= f.password_field :password, placeholder: "パスワード" %></p>
+    <%= f.submit "ログイン" %>
+  <% end %>
+</div>
