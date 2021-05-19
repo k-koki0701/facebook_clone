@@ -1,4 +1,8 @@
 <h1>詳細画面</h1>
 <p>内容</p>
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @blog.image.url %>
+</p>
 <%= @blog.content %>
 <%= link_to '一覧へ', blogs_path %>
