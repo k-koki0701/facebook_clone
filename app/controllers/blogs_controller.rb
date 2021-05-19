@@ -31,6 +31,7 @@ class BlogsController < ApplicationController
   end
   def confirm
     @blog = Blog.new(blog_params)
+  end
   private
   def blog_params
     params.require(:blog).permit(:content)
