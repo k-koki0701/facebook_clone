@@ -29,6 +29,8 @@ class BlogsController < ApplicationController
     @blog.destroy
     redirect_to blogs_path, notice:"ブログを削除しました！"
   end
+  def confirm
+    @blog = Blog.new(blog_params)
   private
   def blog_params
     params.require(:blog).permit(:content)
