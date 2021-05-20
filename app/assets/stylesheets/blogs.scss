@@ -1,0 +1,26 @@
+main {
+  flex: 1;
+  text-align: center;
+  padding-bottom: 150px;
+}
+.field {
+  padding-top: 50px;
+}
+.field input{
+  margin: 3px auto;
+  padding: 10px 0 50px 0;
+}
+.post_list {
+  padding-top: 70px;
+  border-bottom: 1px solid;
+}
+.post_table {
+  margin: 3px auto;
+  border: 1px #000000 solid;
+  border-collapse: separate;
+  border-spacing: 100px 50px;
+  border-radius: 10px;
+}
+.post_table td {
+  border-bottom: 1px #000000 solid;
+}

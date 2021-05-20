@@ -1,3 +1,26 @@
-// Place all the styles related to the users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.login_success {
+  padding-top: 250px;
+  text-align: center;
+}
+.account_creating {
+  padding-top: 50px;
+  text-align: center;
+  background-color: #F8F8FF;
+}
+.account_creating_form {
+  margin: 3px auto;
+  border: 1px #000000 solid;
+  border-collapse: separate;
+  border-spacing: 100px 50px;
+  border-radius: 10px;
+  background-color: white;
+}
+.login_success h1 {
+  padding: 15px;
+}
+.login_success p {
+  padding: 15px;
+}
+.login_success a {
+  padding: 30px;
+}

@@ -10,7 +10,7 @@
     </div>
   <% end %>
   <div class="field">
-    <%= form.label :image %>
+    <%= form.label :写真 %>
     <%= image_tag(@blog.image.url) if @blog.image && @blog.image.url %>
     <%= form.file_field :image %>
     <%= form.hidden_field :image_cache %>
@@ -18,5 +18,6 @@
   <div class="blog_content">
    <%= form.text_area :content, placeholder: "いまなにしてる？", size: "30x10" %>
   </div>
-  <%= form.submit %>
+  <p><%= form.submit %></p>
+  <%= link_to 'ホームへ', blogs_path %>
 <% end %>

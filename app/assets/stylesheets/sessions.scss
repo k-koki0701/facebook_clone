@@ -1,3 +1,11 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px;
+  padding-bottom: 0;
+}
 header {
   background-color: #1877f2;
   height: 50px;
@@ -27,7 +35,7 @@ header li {
   text-align: center;
   padding-top: 150px ;
 }
-.login_background {
+.login {
   background-color: #F8F8FF;
   padding-top: 50px;
 }
@@ -39,17 +47,21 @@ form {
   text-align: center;
   padding: 70px 0 150px 0;
 }
+.btn a{
+  color: #fff;
+}
 footer {
-  width: 100%;
-  background-color:#1877f2;
-  padding: 20px 0 10px 0;
-  color: white;
-  margin: auto;
-  padding-bottom: 10px;
-  font-size: 12px;
   position: absolute;
   bottom: 0;
+  margin-bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: #1877f2;
+  color: #000;
 }
 footer p {
   text-align: center;
+  color: white;
+  font-size: 12px;
+  padding-top: 20px;
 }

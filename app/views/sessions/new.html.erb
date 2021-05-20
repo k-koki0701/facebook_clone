@@ -1,4 +1,4 @@
-<div class="login_background">
+<div class="login">
   <h1 class="fb_logo">facebook</h1>
   <p class="introduction_messarge">Facebookを使うと、友達や同僚、同級<br>
   生、仲間たちとつながりを深められま<br>
@@ -8,6 +8,7 @@
   <%= form_with(scope: :session, url: sessions_path, local: true) do |f| %>
     <p><%= f.email_field :email, placeholder: "メールアドレス"%></p>
     <p><%= f.password_field :password, placeholder: "パスワード" %></p>
-    <%= f.submit "ログイン" %>
+    <p><%= f.submit "ログイン" %></p>
+    <p class="btn btn-success"><%= link_to "新しいアカウントを作成", new_user_path %></p>
   <% end %>
 </div>
