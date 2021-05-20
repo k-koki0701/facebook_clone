@@ -10,7 +10,7 @@
     </div>
   <% end %>
   <div class="field">
-    <%= form.label :写真 %>
+    <p><%= form.label :写真 %></p>
     <%= image_tag(@blog.image.url) if @blog.image && @blog.image.url %>
     <%= form.file_field :image %>
     <%= form.hidden_field :image_cache %>
