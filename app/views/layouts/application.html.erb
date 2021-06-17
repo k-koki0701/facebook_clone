@@ -16,6 +16,7 @@
   　   <% end %>
       <% if logged_in? %>
         <ul class="logout_buttom">
+          <li><%= link_to 'ユーザー一覧', users_path if logged_in? %></li>
           <li><%= link_to "プロフィール", user_path(current_user.id)%></li>
           <li><%= link_to "ログアウト", session_path(current_user.id), method: :delete %></li>
         </ul>

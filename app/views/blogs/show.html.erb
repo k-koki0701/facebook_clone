@@ -4,5 +4,13 @@
   <p><%= image_tag(@blog.image.url, size: "400x500") unless @blog.image.file.nil? %></p>
   <p><内容></p>
   <p><%= @blog.content %></p>
+  <p>ーーコメント一覧ーー</p>
+  <!-- このcomments_areaというHTMLのidを取得して、そのdivの部分だけを更新する -->
+  <div id="comments_area">
+    <!-- 投稿されたコメント一覧をブログの詳細ページに表示するためのrender -->
+    <%= render partial: 'comments/index', locals: { comments: @comments, blog: @blog } %>
+  </div>
+  <!-- コメント入力欄をブログの詳細ページに表示するためのrender -->
+  <%= render partial: 'comments/form', locals: { comment: @comment, blog: @blog } %>
   <%= link_to '一覧へ', blogs_path %>
 </div>
