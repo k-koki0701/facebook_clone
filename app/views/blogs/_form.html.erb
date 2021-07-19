@@ -16,7 +16,8 @@
     <%= form.hidden_field :image_cache %>
   </div>
   <div class="blog_content">
-   <%= form.text_area :content, placeholder: "いまなにしてる？", size: "30x10" %>
+    <%= form.text_area :content,'data-provider': :summernote,id:"summernote"%>
+    <%#form.text_area :content, placeholder: "いまなにしてる？", size: "30x10" %>
   </div>
   <p><%= form.submit %></p>
   <%= link_to 'ホームへ', blogs_path %>

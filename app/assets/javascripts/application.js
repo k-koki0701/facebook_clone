@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require jquery/dist/jquery.js
 //= require bootstrap/dist/js/bootstrap.min
+//= require summernote/summernote-bs4.min
 //= require_tree .
